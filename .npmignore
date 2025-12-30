@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output (included via files in package.json)
+# dist/
+
+# Source files (not needed in published package)
+src/
+tsconfig.json
+.eslintrc.json
+.prettierrc
+jest.config.js
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Misc
+.git/
+.github/
+*.md
+!README.md
