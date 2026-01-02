@@ -16,7 +16,7 @@
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  background: linear-gradient(135deg, #646cff 0%, #61dafb 100%);
+  background: linear-gradient(135deg, #fafafa 0%, #71717a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,35 +28,61 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #27272a;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #18181b;
+  color: #fafafa;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 button:hover {
-  background-color: #646cff;
-  border-color: #646cff;
+  background-color: #27272a;
+  border-color: #3f3f46;
   transform: scale(1.05);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid #52525b;
+  outline-offset: 2px;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #71717a;
 }
 
 code {
-  background: #1a1a1a;
+  background: #27272a;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: light) {
+  h1 {
+    background: linear-gradient(135deg, #18181b 0%, #71717a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  button {
+    background-color: #18181b;
+    border-color: #d4d4d8;
+    color: #fafafa;
+  }
+
+  button:hover {
+    background-color: #27272a;
+    border-color: #a1a1aa;
+  }
+
+  code {
+    background: #e4e4e7;
+    color: #18181b;
+  }
 }

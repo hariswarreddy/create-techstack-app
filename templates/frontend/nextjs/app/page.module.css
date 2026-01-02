@@ -18,7 +18,7 @@
 .title {
   font-size: 3.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #000 0%, #666 100%);
+  background: linear-gradient(135deg, #fafafa 0%, #71717a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -26,7 +26,7 @@
 }
 
 .description {
-  color: #666;
+  color: #a1a1aa;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -39,27 +39,28 @@
 
 .button {
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #27272a;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
-  background-color: #000;
-  color: #fff;
+  background-color: #fafafa;
+  color: #09090b;
   cursor: pointer;
   transition: all 0.25s ease;
   margin-bottom: 1rem;
 }
 
 .button:hover {
-  background-color: #333;
+  background-color: #e4e4e7;
   transform: translateY(-2px);
 }
 
 .code {
-  background: #f1f1f1;
+  background: #27272a;
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-family: monospace;
+  color: #a1a1aa;
 }
 
 .grid {
@@ -71,7 +72,7 @@
 
 .cardLink {
   padding: 1.5rem;
-  border: 1px solid #eaeaea;
+  border: 1px solid #27272a;
   border-radius: 10px;
   transition: all 0.2s ease;
   text-decoration: none;
@@ -79,8 +80,8 @@
 }
 
 .cardLink:hover {
-  border-color: #000;
-  background: rgba(0, 0, 0, 0.02);
+  border-color: #52525b;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .cardLink h2 {
@@ -89,38 +90,38 @@
 }
 
 .cardLink p {
-  color: #666;
+  color: #71717a;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   .title {
-    background: linear-gradient(135deg, #fff 0%, #999 100%);
+    background: linear-gradient(135deg, #18181b 0%, #71717a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .description {
-    color: #999;
+    color: #52525b;
   }
 
   .code {
-    background: #333;
-    color: #fff;
+    background: #e4e4e7;
+    color: #18181b;
   }
 
   .cardLink {
-    border-color: #333;
+    border-color: #e4e4e7;
   }
 
   .cardLink:hover {
-    border-color: #fff;
-    background: rgba(255, 255, 255, 0.05);
+    border-color: #18181b;
+    background: rgba(0, 0, 0, 0.02);
   }
 
   .cardLink p {
-    color: #999;
+    color: #52525b;
   }
 }

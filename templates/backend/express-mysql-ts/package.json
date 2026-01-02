@@ -1,12 +1,13 @@
 {
   "name": "{{projectName}}-backend",
   "version": "1.0.0",
-  "description": "Express + MySQL backend with Prisma ORM",
-  "main": "src/index.js",
+  "description": "Express + MySQL backend with Prisma ORM and TypeScript",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
@@ -19,7 +20,11 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11",
-    "prisma": "^7.2.0"
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "prisma": "^7.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }

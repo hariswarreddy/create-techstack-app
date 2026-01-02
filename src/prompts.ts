@@ -25,7 +25,7 @@ interface CLIOptions {
 const FRONTEND_CHOICES = [
   { name: '⚛️  React with Vite', value: 'react' },
   { name: '💚 Vue with Vite', value: 'vue' },
-  { name: '▲  Next.js 15', value: 'nextjs' },
+  { name: '▲  Next.js 16', value: 'nextjs' },
   { name: '📦 Vanilla JavaScript', value: 'vanilla' },
 ];
 

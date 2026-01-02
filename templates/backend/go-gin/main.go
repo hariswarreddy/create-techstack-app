@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -76,7 +77,7 @@ func main() {
 			return
 		}
 		idCounter++
-		newItem.ID = string(rune(idCounter))
+		newItem.ID = strconv.Itoa(idCounter)
 		newItem.CreatedAt = time.Now()
 		items = append(items, newItem)
 		c.JSON(http.StatusCreated, newItem)

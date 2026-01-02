@@ -1,8 +1,8 @@
 module {{projectName}}
 
-go 1.21
+go 1.22
 
 require (
-	github.com/gofiber/fiber/v2 v2.52.0
+	github.com/gofiber/fiber/v2 v2.52.10
 	github.com/joho/godotenv v1.5.1
 )
