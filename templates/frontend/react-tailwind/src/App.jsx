@@ -30,6 +30,10 @@ function App() {
         <p className="mt-8 text-zinc-600">
           Click on the Vite and React logos to learn more
         </p>
+
+        <footer className="mt-12 text-zinc-700 text-sm">
+          Built by <a href="https://harib.vercel.app" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">hariswarreddy</a>
+        </footer>
       </div>
     </div>
   );

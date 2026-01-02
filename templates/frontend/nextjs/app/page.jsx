@@ -45,6 +45,10 @@ export default function Home() {
             <p>Learn about Next.js in an interactive course.</p>
           </a>
         </div>
+
+        <footer className={styles.footer}>
+          Built by <a href="https://harib.vercel.app" target="_blank" rel="noopener noreferrer">hariswarreddy</a>
+        </footer>
       </div>
     </main>
   );

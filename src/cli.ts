@@ -2,6 +2,8 @@ import { Command } from 'commander';
 import { promptUser, type ProjectConfig } from './prompts.js';
 import { generateProject } from './generator.js';
 import { logger } from './utils/logger.js';
+import { checkForUpdates } from './utils/updateChecker.js';
+import { startPlayground } from './playground/server.js';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -25,11 +27,24 @@ export async function runCLI(): Promise<void> {
     .option('-y, --yes', 'Skip prompts and use defaults')
     .option('--frontend <type>', 'Frontend framework (react, vue, nextjs, vanilla)')
     .option('--backend <type>', 'Backend stack (express-mongodb, express-postgres, go-gin)')
+    .option('--playground', 'Open interactive web-based configuration UI')
     .action(async (projectName: string | undefined, options) => {
       try {
+        // Check for updates in background (non-blocking)
+        const updateMessage = await checkForUpdates();
+        if (updateMessage) {
+          console.log(updateMessage);
+        }
+
         console.log();
         logger.logo();
         console.log();
+
+        // If --playground flag is used, start the playground server
+        if (options.playground) {
+          await startPlayground();
+          return;
+        }
 
         const config: ProjectConfig = await promptUser(projectName, options);
         await generateProject(config);

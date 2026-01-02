@@ -47,8 +47,10 @@ func main() {
 	// Routes
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "Welcome to {{projectName}} API",
-			"version": "1.0.0",
+			"message":   "Welcome to {{projectName}} API",
+			"version":   "1.0.0",
+			"author":    "Built by hariswarreddy",
+			"portfolio": "https://harib.vercel.app",
 		})
 	})
 

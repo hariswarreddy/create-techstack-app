@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 
 const count = ref(0);
+const projectName = '{{projectName}}';
 </script>
 
 <template>
@@ -16,6 +17,11 @@ const count = ref(0);
       </div>
 
       <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+
+      <footer class="footer">
+        Built by
+        <a href="https://harib.vercel.app" target="_blank" rel="noopener">hariswarreddy</a>
+      </footer>
     </header>
   </div>
 </template>

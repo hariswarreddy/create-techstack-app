@@ -1,6 +1,6 @@
 {
   "name": "create-techstack-app",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Interactive CLI to scaffold full-stack applications with your choice of frontend (React, Vue, Next.js) and backend (Express, Go) - Now with TypeScript backends!",
   "main": "dist/index.js",
   "bin": {

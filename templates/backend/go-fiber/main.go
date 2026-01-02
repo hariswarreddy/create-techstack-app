@@ -40,8 +40,10 @@ func main() {
 	// Routes
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"message": "Welcome to {{projectName}} API",
-			"version": "1.0.0",
+			"message":   "Welcome to {{projectName}} API",
+			"version":   "1.0.0",
+			"author":    "Built by hariswarreddy",
+			"portfolio": "https://harib.vercel.app",
 		})
 	})
 

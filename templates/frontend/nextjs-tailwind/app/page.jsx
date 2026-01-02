@@ -58,6 +58,10 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+        <footer className="mt-12 text-zinc-700 text-sm">
+          Built by <a href="https://harib.vercel.app" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">hariswarreddy</a>
+        </footer>
       </div>
     </main>
   );

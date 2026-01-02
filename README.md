@@ -71,6 +71,9 @@ npx create-techstack-app my-app --yes
 # Specify frontend and backend
 npx create-techstack-app my-app --frontend react --backend express-mongodb
 
+# Open interactive web-based playground
+npx create-techstack-app --playground
+
 # Show help
 npx create-techstack-app --help
 ```
@@ -115,14 +118,18 @@ cd frontend && npm run dev
 cd backend && npm run dev
 ```
 
+## What's New in v2.1.0
+
+- 🎮 **Interactive Playground**: Visual web-based UI with `--playground` flag
+- 🔔 **Update Checker**: Notifies when new versions are available
+- 📁 **Project Preview**: See folder structure before generating
+
 ## What's New in v2.0.0
 
 - 🆕 **TypeScript Backends**: Full TypeScript support for all Express backends
 - 🎨 **Tailwind CSS v4**: Updated to latest Tailwind with CSS-first configuration
 - 📊 **Progress Bar**: Visual progress tracking with percentage display
 - ⚡ **Latest Versions**: React 19, Next.js 16, Vue 3.5, Vite 7, Express 5, Prisma 7
-- 🎯 **Black & White Theme**: Clean, modern design for all templates
-- 🔧 **Improved UX**: Dynamic step tracking based on project configuration
 
 ## Requirements
 

@@ -17,7 +17,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.json({ 
     message: 'Welcome to {{projectName}} API',
-    version: '1.0.0'
+    version: '1.0.0',
+    author: 'Built by hariswarreddy',
+    portfolio: 'https://harib.vercel.app'
   });
 });
 

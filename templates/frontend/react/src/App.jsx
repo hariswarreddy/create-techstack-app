@@ -22,6 +22,10 @@ function App() {
         <p className="read-the-docs">
           Click on the Vite and React logos to learn more
         </p>
+        
+        <footer className="footer">
+          Built by <a href="https://harib.vercel.app" target="_blank" rel="noopener noreferrer">hariswarreddy</a>
+        </footer>
       </header>
     </div>
   );
